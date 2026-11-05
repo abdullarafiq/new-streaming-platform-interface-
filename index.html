@@ -4,119 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineWave | Stream Beyond</title>
+    <title>CineWave | Stream Without Limits</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">CINE<span>WAVE.</span></div>
+    <header class="navbar">
+        <div class="logo">Cine<span>Wave</span></div>
 
-        <div class="nav-links">
+        <nav class="nav-links">
             <a href="#home">Home</a>
-            <a href="#shows">Explore Shows</a>
-            <a href="#signin">Sign In</a>
-        </div>
-    </nav>
+            <a href="#shows">Movies & Shows</a>
+            <a href="#continue">My List</a>
+        </nav>
 
-    <!-- Featured Banner -->
-    <header class="banner" id="home">
-        <div class="banner-content">
-            <p class="tagline">CINEWAVE ORIGINAL</p>
-            <h1 class="title">BEYOND THE STARS</h1>
-            <p class="description">
-                A mysterious journey across the galaxy.
-                One crew, one mission, and a universe full of secrets.
-            </p>
-            <button class="play-button">▶ Play Now</button>
+        <div class="profile">
+            <span>Premium</span>
+            <div class="avatar">A</div>
         </div>
     </header>
 
-    <!-- Shows Section -->
-    <main class="shows-section" id="shows">
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">HANDPICKED FOR YOU</p>
-                <h2>Trending This Week</h2>
+    <main>
+        <!-- Featured Banner -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">#1 TRENDING NOW</span>
+                <h1>THE LAST<br>HORIZON</h1>
+
+                <p class="hero-description">
+                    In a world beyond imagination, one journey
+                    will change everything. Discover the truth
+                    behind the last frontier.
+                </p>
+
+                <div class="hero-details">
+                    <span>2026</span>
+                    <span>•</span>
+                    <span>Action / Adventure</span>
+                    <span>•</span>
+                    <span>2h 18m</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#shows" class="btn btn-primary">▶ Watch Now</a>
+                    <a href="#shows" class="btn btn-secondary">More Info</a>
+                </div>
             </div>
-            <a href="#shows" class="view-all">View All →</a>
-        </div>
+        </section>
 
-        <div class="card-container">
+        <!-- Trending Shows -->
+        <section class="content-section" id="shows">
+            <div class="section-heading">
+                <h2>Trending Now</h2>
+                <a href="#shows">View All →</a>
+            </div>
 
-            <article class="card" data-new="true">
-                <div class="poster poster-one">
-                    <span class="poster-icon">🌌</span>
-                    <span class="genre">SCI-FI</span>
-                </div>
-                <div class="card-info">
-                    <h3>Cosmic Journey</h3>
-                    <p>2026 · Series · 8 Episodes</p>
-                </div>
-            </article>
+            <div class="card-row">
 
-            <article class="card">
-                <div class="poster poster-two">
-                    <span class="poster-icon">🦁</span>
-                    <span class="genre">ADVENTURE</span>
-                </div>
-                <div class="card-info">
-                    <h3>Kingdom Rising</h3>
-                    <p>2025 · Movie · 2h 10m</p>
-                </div>
-            </article>
+                <article class="show-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+                         alt="Oppenheimer">
+                    <div class="card-info">
+                        <h3>Oppenheimer</h3>
+                        <p>2023 • Drama</p>
+                    </div>
+                </article>
 
-            <article class="card" data-new="true">
-                <div class="poster poster-three">
-                    <span class="poster-icon">🌃</span>
-                    <span class="genre">THRILLER</span>
-                </div>
-                <div class="card-info">
-                    <h3>Midnight City</h3>
-                    <p>2026 · Series · 10 Episodes</p>
-                </div>
-            </article>
+                <article class="show-card">
+                    <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                         alt="Dune Part Two">
+                    <div class="card-info">
+                        <h3>Dune: Part Two</h3>
+                        <p>2024 • Sci-Fi</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <div class="poster poster-four">
-                    <span class="poster-icon">🚀</span>
-                    <span class="genre">ACTION</span>
-                </div>
-                <div class="card-info">
-                    <h3>Final Orbit</h3>
-                    <p>2025 · Movie · 1h 55m</p>
-                </div>
-            </article>
+                <article class="show-card">
+                    <img src="https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+                         alt="The Shawshank Redemption">
+                    <div class="card-info">
+                        <h3>Shawshank</h3>
+                        <p>1994 • Drama</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <div class="poster poster-five">
-                    <span class="poster-icon">🏝️</span>
-                    <span class="genre">MYSTERY</span>
-                </div>
-                <div class="card-info">
-                    <h3>Lost Paradise</h3>
-                    <p>2024 · Series · 6 Episodes</p>
-                </div>
-            </article>
+                <article class="show-card">
+                    <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                         alt="Joker">
+                    <div class="card-info">
+                        <h3>Joker</h3>
+                        <p>2019 • Thriller</p>
+                    </div>
+                </article>
 
-            <article class="card">
-                <div class="poster poster-six">
-                    <span class="poster-icon">⚡</span>
-                    <span class="genre">FANTASY</span>
-                </div>
-                <div class="card-info">
-                    <h3>Power Within</h3>
-                    <p>2025 · Movie · 2h 05m</p>
-                </div>
-            </article>
+                <article class="show-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8kSerJrhrJWKLk1LViesGcnrUPE.jpg"
+                         alt="Interstellar">
+                    <div class="card-info">
+                        <h3>Interstellar</h3>
+                        <p>2014 • Sci-Fi</p>
+                    </div>
+                </article>
 
-        </div>
+            </div>
+        </section>
+
+        <!-- Part 2: Continue Watching -->
+        <section class="content-section continue-section" id="continue">
+
+            <div class="section-heading">
+                <h2>Continue Watching</h2>
+                <a href="#continue">View All →</a>
+            </div>
+
+            <div class="continue-row">
+
+                <article class="continue-card">
+                    <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                         alt="Dune Part Two">
+                    <div class="continue-info">
+                        <h3>Dune: Part Two</h3>
+                        <p>Episode 1 • 38 min left</p>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="continue-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8kSerJrhrJWKLk1LViesGcnrUPE.jpg"
+                         alt="Interstellar">
+                    <div class="continue-info">
+                        <h3>Interstellar</h3>
+                        <p>Movie • 52 min left</p>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="continue-card">
+                    <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                         alt="Joker">
+                    <div class="continue-info">
+                        <h3>Joker</h3>
+                        <p>Movie • 25 min left</p>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2026 CineWave. All rights reserved.</p>
-        <p>Entertainment beyond imagination.</p>
+        <div class="footer-logo">Cine<span>Wave</span></div>
+        <p>Stream Without Limits. © 2026 CineWave.</p>
     </footer>
 
 </body>
